@@ -198,6 +198,10 @@ body #root .global-wrapper #hero .row .b {
   height: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body #root .global-wrapper #hero .row .b .wrapper-arrow {
