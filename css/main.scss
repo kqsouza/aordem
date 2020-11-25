@@ -6,7 +6,7 @@ body {
     .global-wrapper {
       border: 1px solid black;
       padding: 0;
-      height: 2000px;
+      height: 1000px;
       background-color: black;
 
       nav {
@@ -168,11 +168,27 @@ body {
             justify-content: center;
             align-items: center;
             height: 100%;
+            flex-wrap: wrap;
+
+            .wrapper-arrow {
+              position: relative;
+              z-index: 3;
+              font-family: "MeltowSan";
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              flex-direction: column;
+
+              i {
+                font-size: 13px;
+              }
+            }
 
             img {
               width: 228px;
               height: 320px;
-              margin-bottom: 180px;
             }
           }
 
@@ -300,4 +316,9 @@ body {
   90% {
     transform: translate(-10%, 10%);
   }
+}
+
+@font-face {
+  src: url("../fonts/meltow-san-200-regular.ttf");
+  font-family: "MeltowSan";
 }

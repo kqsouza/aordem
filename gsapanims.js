@@ -19,6 +19,13 @@ $(document).ready(function () {
 
   //FIM DA TIMELINE DE ANIMAÇÃO AO ENTRAR NA PÁGINA.
 
+  let tlInfiniteArrow = gsap.timeline({ repeat: -1, yoyo: true });
+  tlInfiniteArrow.to(".wrapper-arrow i", {
+    duration: 0.5,
+    y: -10,
+    ease: Back.easeOut.config(1.7),
+  });
+
   function mouseOverItems(target, name) {
     let tlOverItem = gsap.timeline();
     tlOverItem.to(`${name}${target}`, {
