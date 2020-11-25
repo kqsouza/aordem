@@ -160,6 +160,28 @@ body #root .global-wrapper #hero .row {
 body #root .global-wrapper #hero .row .a {
   padding: 0;
   height: 100%;
+  position: relative;
+}
+
+body #root .global-wrapper #hero .row .a .spin {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  font-family: monospace;
+  font-size: 140px;
+  bottom: -20px;
+  left: -50px;
+  z-index: 3;
+}
+
+body #root .global-wrapper #hero .row .a .spin .circle-text {
+  width: 300px;
+}
+
+body #root .global-wrapper #hero .row .a .spin .circle-text g {
+  stroke-width: 5;
+  stroke: black;
+  fill: #fff;
 }
 
 body #root .global-wrapper #hero .row .b {
@@ -207,6 +229,7 @@ body #root .global-wrapper #hero .row .b .wrapper-arrow i {
 body #root .global-wrapper #hero .row .b img {
   width: 228px;
   height: 320px;
+  cursor: pointer;
 }
 
 body #root .global-wrapper #hero .row .c {

@@ -16,7 +16,28 @@ $(document).ready(function () {
     "-=1"
   );
   tl1.from(".navbar-brand", { duration: 2, x: -20, opacity: 0 }, "-=0.5");
-
+  tl1.from(".wrapper-arrow", {
+    duration: 1,
+    y: 30,
+    ease: Expo.easeOut,
+    opacity: 0,
+  });
+  tl1.from(".a .spin svg", { duration: 1, y: 20, opacity: 0 }, "-=2.5");
+  tl1
+    .fromTo(
+      ".a .spin svg",
+      {
+        rotation: 0,
+      },
+      {
+        rotation: 360,
+        duration: 5,
+        repeat: -1,
+        ease: "linear",
+      },
+      0
+    )
+    .timeScale(1);
   //FIM DA TIMELINE DE ANIMAÇÃO AO ENTRAR NA PÁGINA.
 
   let tlInfiniteArrow = gsap.timeline({ repeat: -1, yoyo: true });
@@ -50,6 +71,17 @@ $(document).ready(function () {
     },
     function (evt) {
       mouseOutItems(evt.target.id, "#");
+    }
+  );
+
+  $(".navbar-brand").hover(
+    function () {
+      let riseLogo = gsap.timeline();
+      riseLogo.to(".b img", { duration: 3, y: -23, ease: Expo.easeOut });
+    },
+    function () {
+      let downLogo = gsap.timeline();
+      downLogo.to(".b img", { duration: 3, y: 0, ease: Expo.easeOut });
     }
   );
 

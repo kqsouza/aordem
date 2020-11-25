@@ -159,6 +159,27 @@ body {
             //border: 1px dashed rgb(81, 253, 81);
             padding: 0;
             height: 100%;
+            position: relative;
+
+            .spin {
+              width: 300px;
+              height: 200px;
+              position: absolute;
+              font-family: monospace;
+              font-size: 140px;
+              bottom: -20px;
+              left: -50px;
+              z-index: 3;
+              .circle-text {
+                width: 300px;
+              }
+
+              .circle-text g {
+                stroke-width: 5;
+                stroke: black;
+                fill: #fff;
+              }
+            }
           }
 
           .b {
@@ -189,6 +210,7 @@ body {
             img {
               width: 228px;
               height: 320px;
+              cursor: pointer;
             }
           }
 
