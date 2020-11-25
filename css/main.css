@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Asset&display=swap");
+body #root .global-wrapper {
+  border: 1px solid black;
+  padding: 0;
+  height: 2000px;
+  background-color: black;
+}
+
+body #root .global-wrapper nav {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  z-index: 3;
+  width: 100%;
+  background: transparent;
+}
+
+body #root .global-wrapper nav .navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-family: "Asset", cursive;
+  font-size: 18px;
+  position: relative;
+}
+
+body #root .global-wrapper nav .navbar-brand:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  color: white;
+  background-color: white;
+  z-index: 4;
+}
+
+body #root .global-wrapper nav .menu-button {
+  position: relative;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border: 0;
+  padding: 0;
+  width: 33px;
+  height: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+body #root .global-wrapper nav .menu-button .menu-bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #root .global-wrapper nav .menu-button .menu-bars .bar1 {
+  background: black;
+  width: 16px;
+  height: 2px;
+  position: relative;
+  margin: 2px 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+body #root .global-wrapper nav .menu-button .menu-bars .bar2 {
+  background-color: black;
+  width: 28px;
+  height: 2px;
+  position: relative;
+  margin: 2px 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+body #root .global-wrapper nav .menu-button .menu-bars .bar3 {
+  background-color: black;
+  width: 16px;
+  height: 2px;
+  position: relative;
+  left: 16px;
+  margin: 2px 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+body #root .global-wrapper #hero {
+  height: 100vh;
+  position: relative;
+}
+
+body #root .global-wrapper #hero .farmountain {
+  background: url("../images/farmountain.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body #root .global-wrapper #hero .nearmountain {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/nearmountain.png");
+  background-size: cover;
+  background-position: center bottom;
+  z-index: 1;
+}
+
+body #root .global-wrapper #hero .row {
+  height: 100%;
+  margin: 0;
+}
+
+body #root .global-wrapper #hero .row .a {
+  padding: 0;
+  height: 100%;
+}
+
+body #root .global-wrapper #hero .row .b {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body #root .global-wrapper #hero .row .b img {
+  width: 228px;
+  height: 320px;
+  margin-bottom: 180px;
+}
+
+body #root .global-wrapper #hero .row .c {
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+body #root .global-wrapper #hero .row .c .redessociais {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  right: 25px;
+  bottom: 20px;
+  z-index: 2;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body #root .global-wrapper #hero .row .c .redessociais i {
+  font-size: 24px;
+  border-bottom: 1px;
+  background: linear-gradient(145deg, #582631 31%, #8f5b2c 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

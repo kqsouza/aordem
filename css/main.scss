@@ -1,0 +1,188 @@
+//Importação de fontes
+@import url("https://fonts.googleapis.com/css2?family=Asset&display=swap");
+
+body {
+  #root {
+    .global-wrapper {
+      border: 1px solid black;
+      padding: 0;
+      height: 2000px;
+      background-color: black;
+
+      nav {
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        z-index: 3;
+        width: 100%;
+        background: transparent;
+
+        .navbar-brand {
+          color: white;
+          text-decoration: none;
+          font-family: "Asset", cursive;
+          font-size: 18px;
+          position: relative;
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            color: white;
+            background-color: white;
+            z-index: 4;
+          }
+        }
+
+        .menu-button {
+          position: relative;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          border: 0;
+          padding: 0;
+
+          width: 33px;
+          height: 20px;
+          z-index: 1;
+          cursor: pointer;
+
+          .menu-bars {
+            display: flex;
+            flex-direction: column;
+
+            .bar1 {
+              background: black;
+              width: 16px;
+              height: 2px;
+              position: relative;
+              margin: 2px 0;
+              -webkit-transform-origin: center center;
+              transform-origin: center center;
+            }
+
+            .bar2 {
+              background-color: black;
+              width: 28px;
+              height: 2px;
+              position: relative;
+              margin: 2px 0;
+              -webkit-transform-origin: center center;
+              transform-origin: center center;
+            }
+
+            .bar3 {
+              background-color: black;
+              width: 16px;
+              height: 2px;
+              position: relative;
+              left: 16px;
+              margin: 2px 0;
+              -webkit-transform-origin: center center;
+              transform-origin: center center;
+            }
+          }
+        }
+      }
+
+      #hero {
+        height: 100vh;
+        position: relative;
+
+        .farmountain {
+          background: url("../images/farmountain.png");
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          //border: 1px solid orangered;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .nearmountain {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          //border: 1px solid black;
+          width: 100%;
+          height: 100%;
+          background: url("../images/nearmountain.png");
+          background-size: cover;
+          background-position: center bottom;
+          z-index: 1;
+        }
+
+        .row {
+          //border: 1px solid yellow;
+          height: 100%;
+          margin: 0;
+
+          .a {
+            //border: 1px dashed rgb(81, 253, 81);
+            padding: 0;
+            height: 100%;
+          }
+
+          .b {
+            //border: 1px dashed purple;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            img {
+              width: 228px;
+              height: 320px;
+              margin-bottom: 180px;
+            }
+          }
+
+          .c {
+            //border: 1px dashed blue;
+            padding: 0;
+            position: relative;
+            height: 100%;
+
+            .redessociais {
+              position: absolute;
+              //border: 1px solid yellow;
+              display: flex;
+              color: white;
+              right: 25px;
+              bottom: 20px;
+              z-index: 2;
+              flex-wrap: wrap;
+              justify-content: center;
+              width: 35px;
+              height: 100px;
+              align-items: flex-end;
+
+              i {
+                font-size: 24px;
+                border-bottom: 1px;
+                background: linear-gradient(
+                  145deg,
+                  rgba(88, 38, 49, 1) 31%,
+                  rgba(143, 91, 44, 1) 74%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
