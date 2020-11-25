@@ -19,6 +19,33 @@ $(document).ready(function () {
 
   //FIM DA TIMELINE DE ANIMAÇÃO AO ENTRAR NA PÁGINA.
 
+  function mouseOverItems(target, name) {
+    let tlOverItem = gsap.timeline();
+    tlOverItem.to(`${name}${target}`, {
+      duration: 0.5,
+      scale: 1.3,
+      ease: Expo.easeOut,
+    });
+  }
+
+  function mouseOutItems(target, name) {
+    let tlOutItem = gsap.timeline();
+    tlOutItem.to(`${name}${target}`, {
+      duration: 0.5,
+      scale: 1,
+      ease: Power1.easeOut,
+    });
+  }
+
+  $(".redessociais i").hover(
+    function (evt) {
+      mouseOverItems(evt.target.id, "#");
+    },
+    function (evt) {
+      mouseOutItems(evt.target.id, "#");
+    }
+  );
+
   var menu = document.getElementById("menuBox");
   var bar1 = document.querySelector(".bar1");
   var bar2 = document.querySelector(".bar2");
