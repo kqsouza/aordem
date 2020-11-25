@@ -134,7 +134,7 @@ body #root .global-wrapper #hero .vignette {
   /* Fx 5+ */
   /* Opera 12+ */
   animation: vignette-anim 3s infinite;
-  /* IE 10+, Fx 29+ */
+  /* IE 10++, Fx 29+ */
 }
 
 body #root .global-wrapper #hero .noise {
