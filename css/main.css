@@ -273,6 +273,88 @@ body #root .global-wrapper #hero .row .c .redessociais i {
   cursor: pointer;
 }
 
+body #root .transition-wrapper {
+  position: absolute;
+  min-height: 100vh;
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body #root .transition-wrapper .line {
+  position: absolute;
+  background-color: #000;
+  z-index: 4;
+}
+
+body #root .transition-wrapper .line--top {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+}
+
+body #root .transition-wrapper .line--right {
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 5px;
+}
+
+body #root .transition-wrapper .line--bottom {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 5px;
+}
+
+body #root .transition-wrapper .line--left {
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 5px;
+}
+
+body #root .transition-wrapper .mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 3;
+  opacity: 1;
+}
+
+body #root .transition-wrapper .text,
+body #root .transition-wrapper .text2 {
+  color: #fff;
+  opacity: 0;
+  z-index: 5;
+}
+
+body #root .transition-wrapper .text a,
+body #root .transition-wrapper .text2 a {
+  color: green;
+}
+
+body #root .transition-wrapper .text-center {
+  text-align: center;
+}
+
 @-webkit-keyframes vignette-anim {
   0%,
   100% {

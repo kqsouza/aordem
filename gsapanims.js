@@ -2,7 +2,19 @@ $(document).ready(function () {
   //TIMELINE DE ANIMAÇÃO AO ENTRAR NA PÁGINA
 
   let tl1 = gsap.timeline();
-  tl1.from(".logo", { duration: 3, y: 300, ease: Back.easeOut.config(1.7) });
+
+  tl1.to(".line--top", 0.6, { width: "100%", ease: Power2.easeIn });
+  tl1.to(".line--right", 0.6, { height: "100%", ease: Power0.easeNone });
+  tl1.to(".line--bottom", 0.6, { width: "100%", ease: Power0.easeNone });
+  tl1.to(".line--left", 0.6, { height: "100%", ease: Power2.easeOut });
+  tl1.to(".mask", 1, { left: "100%" });
+  tl1.to(".transition-wrapper", { duration: 1, display: "none" });
+
+  tl1.from(
+    ".logo",
+    { duration: 3, y: 300, ease: Back.easeOut.config(1.7) },
+    "-=1"
+  );
   tl1.from(".logo", { duration: 2.5, opacity: 0 }, "-=2.5");
   tl1.from(".redessociais i", {
     duration: 0.8,
